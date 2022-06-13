@@ -11,7 +11,8 @@ let colors = [
 
 
 const Request = async(username) => {
-    let resp = await axios.post('http://64.227.25.226:6060/discord', {
+    // http://64.227.25.226:6060/discord
+    let resp = await axios.post('http://localhost:8000/discord', {
         username,
         token: process.env.TOKEN_REQ
     });
